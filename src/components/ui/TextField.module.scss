@@ -1,0 +1,31 @@
+@import "../../vars.scss";
+
+.textField {
+  position: relative;
+  input {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-top: 10px;
+
+    border: 0;
+    padding: 0;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 2px solid #eee;
+    font: inherit;
+    font-size: 14px;
+    line-height: 30px;
+    &:focus,
+    &:valid {
+      outline: 0;
+      border-bottom-color: #665856;
+    }
+  }
+
+  label {
+    color: #8597a3;
+    position: absolute;
+    top: 20px;
+  }
+}
