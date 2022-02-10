@@ -10,7 +10,6 @@ const Error: React.FC<IErrorProps> = ({ className = "", error }) => {
   const [fade, setFade] = useState(0);
 
   useEffect(() => {
-    console.log("##text");
     setFade((prev) => prev + 1);
   }, [error]);
 

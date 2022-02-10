@@ -10,7 +10,6 @@ export interface IContactListProps {
 
 const ContactList: React.FC<IContactListProps> = ({ className = "", contacts, setContacts }) => {
   const handleDelete = (idx: number) => {
-    // console.log()
     const newContacts = contacts.filter(function (item, itemIdx) {
       return idx != itemIdx;
     });

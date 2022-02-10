@@ -12,7 +12,6 @@ const PhoneBook: React.FC<IPhoneBookProps> = ({ className = "" }) => {
   const [contacts, setContacts] = useState<ContactType[]>([]);
 
   const handleAdd = (contact: ContactType) => {
-    console.log("handleAdd", contact);
     setContacts((prev) => [...prev, contact]);
   };
 
