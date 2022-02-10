@@ -7,6 +7,12 @@ yarn
 yarn start
 ```
 
+### test
+
+```
+npx cypress open
+```
+
 #### build
 
 ```
