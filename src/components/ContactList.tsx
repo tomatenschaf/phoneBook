@@ -29,20 +29,22 @@ const ContactList: React.FC<IContactListProps> = ({ className = "", contacts, se
           </tr>
         </thead>
         <tbody>
-          {contacts.map((contact, idx) => {
+          {contacts?.map((contact, idx) => {
             return (
               // TODO: use better key
               <tr key={idx + JSON.stringify(contact)}>
                 <td>{contact.firstName}</td>
                 <td>{contact.lastName}</td>
                 <td>{contact.phoneNumber}</td>
-                <td
-                  className={styles.delete}
-                  onClick={() => {
-                    handleDelete(idx);
-                  }}
-                >
-                  x
+                <td>
+                  <a
+                    className={styles.delete}
+                    onClick={() => {
+                      handleDelete(idx);
+                    }}
+                  >
+                    x
+                  </a>
                 </td>
               </tr>
             );

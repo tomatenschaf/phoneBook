@@ -11,8 +11,6 @@ export interface IPhoneBookProps {
 const PhoneBook: React.FC<IPhoneBookProps> = ({ className = "" }) => {
   const [contacts, setContacts] = useState<ContactType[]>([]);
 
-  console.log(contacts);
-
   const handleAdd = (contact: ContactType) => {
     console.log("handleAdd", contact);
     setContacts((prev) => [...prev, contact]);
