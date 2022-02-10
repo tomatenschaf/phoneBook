@@ -20,7 +20,7 @@ const PhoneBook: React.FC<IPhoneBookProps> = ({ className = "" }) => {
 
   return (
     <div className={styles.phoneBook + " " + className}>
-      <ContactList contacts={contacts} />
+      <ContactList contacts={contacts} setContacts={setContacts} />
 
       <div>
         <h5>Add new contact</h5>

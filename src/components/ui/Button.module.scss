@@ -15,6 +15,8 @@
   background: linear-gradient($colorSecondary, $color);
   box-shadow: 0 2px 12px -3px $color;
   opacity: 0.9;
+
+  &:focus,
   &:hover {
     opacity: 1;
     box-shadow: 0 2px 2px -3px $color;

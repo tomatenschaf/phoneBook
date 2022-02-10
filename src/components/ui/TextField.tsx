@@ -29,7 +29,7 @@ const TextField: React.FC<ITextFieldProps> = ({ name, value, label, onChange, cl
 
   return (
     <label className={styles.textField + " " + className}>
-      {label}
+      <span>{label}</span>
       <input value={value} name={name} onChange={handleChange} onBlur={handleBlur} onKeyUp={handleKeyUp} />
     </label>
   );

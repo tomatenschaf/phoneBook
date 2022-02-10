@@ -1,0 +1,25 @@
+@import "../vars.scss";
+@keyframes fadeout {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.error {
+  display: block;
+  background-color: $colorErrorBackground;
+  border: 1px solid $color;
+  border-radius: 10px;
+  padding: 20px;
+  // &.fadeout {
+  animation: fadeout 5s ease-out forwards;
+  // }
+}

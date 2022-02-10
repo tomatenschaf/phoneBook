@@ -1,8 +1,18 @@
 @import "../../vars.scss";
 
 .textField {
+  display: block;
   position: relative;
+  margin-top: 10px;
+  color: #8597a3;
+  top: 20px;
+  span {
+    display: block;
+    font-size: 0.8em;
+  }
+
   input {
+    width: 200px;
     display: flex;
     flex-direction: column-reverse;
     position: relative;
@@ -21,11 +31,5 @@
       outline: 0;
       border-bottom-color: #665856;
     }
-  }
-
-  label {
-    color: #8597a3;
-    position: absolute;
-    top: 20px;
   }
 }
